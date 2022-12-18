@@ -4,16 +4,27 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	Development	//
+HT_DELETED_ITEM	src/hash_table.h	/^static ht_item HT_DELETED_ITEM = {NULL, NULL};$/;"	v
 count	src/hash_table.c	/^  int count;$/;"	m	struct:__anon2	file:
 ht_del_hash_table	src/hash_table.h	/^void ht_del_hash_table(ht_hash_table* ht) {$/;"	f
 ht_del_item	src/hash_table.h	/^static void ht_del_item(ht_item* i) {$/;"	f
+ht_delete	src/hash_table.h	/^void ht_delete(ht_hash_table* ht, const char* key) {$/;"	f
+ht_get_hash	src/hash_table.h	/^static int ht_get_hash(const char* s, const int num_buckets, const int attempt) {$/;"	f
 ht_hash	src/hash_table.h	/^static int ht_hash(const char* s, const int a, const m) {$/;"	f
+ht_insert	src/hash_table.h	/^void ht_insert(ht_hash_table* ht, const char* key, const char* value) {$/;"	f
 ht_item	src/hash_table.c	/^} ht_item;$/;"	t	typeref:struct:__anon1	file:
-ht_item_table	src/hash_table.c	/^} ht_item_table; $/;"	t	typeref:struct:__anon2	file:
+ht_item_table	src/hash_table.c	/^} ht_item_table;$/;"	t	typeref:struct:__anon2	file:
 ht_new	src/hash_table.h	/^ht_hash_table* ht_new() {$/;"	f
 ht_new_item	src/hash_table.h	/^static ht_item* ht_new_item(const char* k, const char* v){$/;"	f
+ht_new_sized	src/hash_table.h	/^static ht_hash_table* ht_new_sized(const int base_size) {$/;"	f
+ht_resize	src/hash_table.h	/^static void ht_resize(ht_hash_table* ht, const int base_size) {$/;"	f
+ht_resize_down	src/hash_table.h	/^static void ht_resize_down(ht_hash_table* ht) {$/;"	f
+ht_resize_up	src/hash_table.h	/^static void ht_resize_up(ht_hash_table* ht) {$/;"	f
+ht_search	src/hash_table.h	/^char* ht_search(ht_hash_table* ht, const char* key) {$/;"	f
+is_prime	src/primie.c	/^ int is_prime(const int x) {$/;"	f
 items	src/hash_table.c	/^  ht_item** items;$/;"	m	struct:__anon2	file:
 key	src/hash_table.c	/^  char* key;$/;"	m	struct:__anon1	file:
 main	src/main.c	/^int main() {$/;"	f
+next_prime	src/primie.c	/^int next_prime(int x) {$/;"	f
 size	src/hash_table.c	/^  int size;$/;"	m	struct:__anon2	file:
 value	src/hash_table.c	/^  char* value;$/;"	m	struct:__anon1	file:
