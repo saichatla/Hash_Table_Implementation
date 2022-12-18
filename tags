@@ -7,6 +7,8 @@
 count	src/hash_table.c	/^  int count;$/;"	m	struct:__anon2	file:
 ht_item	src/hash_table.c	/^} ht_item;$/;"	t	typeref:struct:__anon1	file:
 ht_item_table	src/hash_table.c	/^} ht_item_table; $/;"	t	typeref:struct:__anon2	file:
+ht_new	src/hash_table.h	/^ht_hash_table* ht_new() {$/;"	f
+ht_new_item	src/hash_table.h	/^static ht_item* ht_new_item(const char* k, const char* v){$/;"	f
 items	src/hash_table.c	/^  ht_item** items;$/;"	m	struct:__anon2	file:
 key	src/hash_table.c	/^  char* key;$/;"	m	struct:__anon1	file:
 size	src/hash_table.c	/^  int size;$/;"	m	struct:__anon2	file:
